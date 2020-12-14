@@ -34,7 +34,8 @@
 		"typo3/cms-viewpage": "^9.5",
 		"friendsoftypo3/extension-builder": "^9.10",
 		"fluidtypo3/flux": "^9.4",
-		"fluidtypo3/vhs": "^6.0"
+		"fluidtypo3/vhs": "^6.0",
+		"co/demo-sitepackage": "^1.0"
 	},
 	"scripts":{
 		"typo3-cms-scripts": [

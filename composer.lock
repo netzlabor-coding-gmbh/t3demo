@@ -4,8 +4,38 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b34ad4c423b06d8543b6ff121b0ea2a1",
+    "content-hash": "ba50f83a9a7f8d1a280f2ba4d2c8fa2d",
     "packages": [
+        {
+            "name": "co/demo-sitepackage",
+            "version": "1.0.0",
+            "dist": {
+                "type": "path",
+                "url": "packages/demo_sitepackage",
+                "reference": "16a0fe2939a27355dda0eb09bba1c3a364500cfe"
+            },
+            "require": {
+                "typo3/cms-core": "^9.5"
+            },
+            "replace": {
+                "co/demo-sitepackage": "self.version",
+                "typo3-ter/demo-sitepackage": "self.version"
+            },
+            "type": "typo3-cms-extension",
+            "autoload": {
+                "psr-4": {
+                    "CO\\DemoSitepackage\\": "Classes"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "CO\\DemoSitepackage\\Tests\\": "Tests"
+                }
+            },
+            "transport-options": {
+                "relative": true
+            }
+        },
         {
             "name": "cogpowered/finediff",
             "version": "0.3.1",
