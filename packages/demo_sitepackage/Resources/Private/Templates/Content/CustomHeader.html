@@ -1,0 +1,20 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en" xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers" xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
+
+    <f:layout name="Content" />
+
+    <f:section name="Configuration">
+        <flux:form id="customHeader" label="Custom Header" options="{group: 'demo'}">
+            <flux:form.option.icon value="/typo3/sysext/core/Resources/Public/Icons/T3Icons/content/content-menu-card.svg"/>
+            <flux:field.input name="customHeading" label="Type Custom Header Here"/>
+        </flux:form>
+    </f:section>
+
+    <f:section name="Preview">
+        <b>Custom Header</b>
+        {customHeading}
+    </f:section>
+
+    <f:section name="Main">
+        <h1 style="color:darkorange">👉 {customHeading}</h1>
+    </f:section>
+</div>

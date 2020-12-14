@@ -1,0 +1,9 @@
+plugin.tx_demositepackage.view {
+	templateRootPaths.0 = EXT:demo_sitepackage/Resources/Private/Templates/
+	partialRootPaths.0 = EXT:demo_sitepackage/Resources/Private/Partials/
+	layoutRootPaths.0 = EXT:demo_sitepackage/Resources/Private/Layouts/
+}
+
+page {
+	rootMenuPage = 
+}

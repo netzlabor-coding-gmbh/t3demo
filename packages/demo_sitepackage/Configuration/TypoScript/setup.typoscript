@@ -1,0 +1,28 @@
+plugin.tx_demositepackage {
+	view {
+		templateRootPaths.0 = {$plugin.tx_demositepackage.view.templateRootPaths.0}
+		partialRootPaths.0 = {$plugin.tx_demositepackage.view.partialRootPaths.0}
+		layoutRootPaths.0 = {$plugin.tx_demositepackage.view.layoutRootPaths.0}
+	}
+}
+
+page {
+    includeCSS {
+        mainCss = EXT:demo_sitepackage/Resources/Public/css/styles.css
+    }
+
+    includeJSFooter {
+        mainJs = EXT:demo_sitepackage/Resources/Public/js/scripts.js
+
+        alpineJs = https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js
+        alpineJs.external = true
+    }
+
+    meta {
+        x-ua-compatible = ie=edge
+        x-ua-compatible.attribute = http-equiv
+        viewport = width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, shrink-to-fit=no
+    }
+
+    rootMenuPage = {$page.rootMenuPage}
+}

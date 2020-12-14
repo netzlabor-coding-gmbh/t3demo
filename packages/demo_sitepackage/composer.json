@@ -1,0 +1,23 @@
+{
+    "name": "co/demo-sitepackage",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "authors": [],
+    "require": {
+        "typo3/cms-core": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "CO\\DemoSitepackage\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CO\\DemoSitepackage\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "co/demo-sitepackage": "self.version",
+        "typo3-ter/demo-sitepackage": "self.version"
+    }
+}

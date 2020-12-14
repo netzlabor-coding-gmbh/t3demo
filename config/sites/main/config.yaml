@@ -1,0 +1,27 @@
+base: 'https://www.t3demo.com/'
+baseVariants:
+  -
+    base: 'https://t3demo.ddev.site/'
+    condition: 'applicationContext == "Development/DDEV"'
+errorHandling:
+  -
+    errorCode: '404'
+    errorHandler: Page
+    errorContentSource: 't3://page?uid=5'
+flux_content_types: ''
+flux_page_templates: ''
+languages:
+  -
+    title: English
+    enabled: true
+    languageId: 0
+    base: /
+    typo3Language: default
+    locale: en_US.UTF-8
+    iso-639-1: en
+    navigationTitle: English
+    hreflang: en-us
+    direction: ltr
+    flag: us
+rootPageId: 1
+routes: {  }

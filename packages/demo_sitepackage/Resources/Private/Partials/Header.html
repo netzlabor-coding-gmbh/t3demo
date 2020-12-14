@@ -1,0 +1,16 @@
+<header class="bg-gray-800 mb-10" x-data="{ text: 'Hi!' }">
+    <nav class="contnainer mx-auto flex items-center h-16 px-8">
+        <a href="/" @click="alert(text)" x-on:click.prevent class="mr-2 bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">t3demo</a>
+        <v:menu pageUid="{page.rootMenuPage}">
+            <f:for each="{menu}" as="item" iteration="i">
+                <f:link.typolink 
+                    parameter="{item.link}" 
+                    target="{item.target}" 
+                    class="{f:if(condition: i.isLast, then: '', else: 'mr-2 ')} text-white px-3 py-2 rounded-md text-sm font-medium{f:if(condition: item.active, then: ' bg-gray-700', else: ' bg-gray-900')}"
+                >
+                    {item.title}
+                </f:link.typolink>
+            </f:for>
+        </v:menu>
+    </nav>
+</header>
